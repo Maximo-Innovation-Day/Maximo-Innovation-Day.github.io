@@ -1,0 +1,93 @@
+.caesar {
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.countdown {
+  font-size: calc(8rem + 2vmin);
+}
+
+.videoContent {
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+
+#bgVideoOverlay {
+  background-color: #111111;
+  opacity: 0.7;
+}
+
+.cipher {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 60px;
+}
+
+.cipher .encChar,
+.cipher .actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.actions {
+  padding-left: 1.5rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.msgLine {
+  display: flex;
+}
+
+.encChar {
+  border: 1px solid white;
+  padding: 1rem;
+  min-width: 1rem;
+}
+
+.encChar--divider {
+  border: none;
+}
+
+.encChar.empty {
+  color: #282c34;
+}
+.input .encChar.empty {
+  padding: 0;
+}
+
+.encChar.spaceChar {
+  color: #282c34;
+  border: 1px solid #282c34;
+}
+
+.cursorPad {
+  margin-left: -2.5rem;
+}
+
+.cursor {
+  background: white;
+  padding: 1rem;
+  animation: cursorPulse 2s linear infinite;
+}
+
+@keyframes cursorPulse {
+  50% {
+    opacity: 0;
+  }
+}

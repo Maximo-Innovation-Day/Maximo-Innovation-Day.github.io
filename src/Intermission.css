@@ -1,0 +1,48 @@
+.Intermission {
+  text-align: center;
+  background-color: #282c34;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.Intermission .title {
+  text-align: center;
+  color: white;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  margin-bottom: 3rem;
+}
+
+.Intermission .countdown {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.Intermission .countdown-number {
+  font-size: calc(40px + 5vmin);
+  font-weight: bold;
+  margin-top: 1rem;
+  animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
